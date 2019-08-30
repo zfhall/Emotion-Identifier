@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+  color: #A2A4D5; /*light purple*/
+  background-color: #FAFBFF;    /* Light gray */
+}
+
+h1 {
+	font-size: 36px;
+	font-family: "Helvetica", "Arial", sans-serif;
+
+} 

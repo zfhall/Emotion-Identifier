@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Emotion Identifier</title>
+    <link rel='stylesheet' href='Index.css'/>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <h1>Welcome to the emotion identifier app!</h1>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+    
+    <button id="class-a">Add Happy</button>
+    <button id="class-b">Add Sad</button>
+    <button id="class-c">Add Angry</button>
+    <button id="class-d">Add Neutral</button>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
