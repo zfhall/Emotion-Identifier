@@ -1,11 +1,35 @@
 body {
-  text-align: center;
-  color: #A2A4D5; /*light purple*/
-  background-color: #FAFBFF;    /* Light gray */
+	text-align: center;
+  color: #4CAF50;
+  background-color: #FAFBFF;
 }
 
 h1 {
+	text-align: center;
 	font-size: 36px;
 	font-family: "Helvetica", "Arial", sans-serif;
 
 } 
+
+div {
+	text-align: center;
+	font-size: 18px;
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+video {
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */}
+    
+button {
+  text-align: center;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
