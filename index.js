@@ -58,10 +58,19 @@ async function app() {
       const result = await classifier.predictClass(activation);
 
       const classes = ['Happy', 'Sad', 'Angry', 'Neutral'];
+
+      if (result.confidences[result.classIndex] > 0.67) {
       document.getElementById('console').innerText = `
-        prediction: ${classes[result.classIndex]}\n
-        probability: ${result.confidences[result.classIndex]}
+        You are: ${classes[result.classIndex]}\n
+        Probability: ${Math.round(result.confidences[result.classIndex]*100*100.0)/100.0 + '%'}
       `;
+  	  } else {
+  	  document.getElementById('console').innerText = `
+        You may be: ${classes[result.classIndex]}\n
+        Probability: ${Math.round(result.confidences[result.classIndex]*100*100.0)/100.0 + '%'}
+      `;
+  	  }
+
     }
 
     await tf.nextFrame();
@@ -69,7 +78,4 @@ async function app() {
 }
 
 app();
-
-
-
 
